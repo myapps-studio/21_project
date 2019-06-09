@@ -1,0 +1,43 @@
+// Zadanie 1
+
+const firstWord = 'Hello';
+const secondWord = 'World';
+
+console.log(`${firstWord} ${secondWord}`);
+
+// Zadanie 2
+
+ multiply = (x, y) => {
+    
+    return x * y;
+}
+
+var test1 = multiply(5, 6);
+console.log(test1);
+
+// Zadanie 3
+
+function argSum(...theArgs) {
+    return theArgs.reduce((previous, current) => {
+      return (previous + current) / theArgs.length;
+    });
+  }
+
+console.log(argSum(1, 2, 3));
+
+// Zadanie 4
+
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+
+function f(...grades) {
+    return grades;
+  }
+  
+console.log(argSum(f(grades)));
+
+// Zadanie 5
+
+const data = [1, 4, 'Iwona', false, 'Nowak'];
+const [, , third, , fifth] = data;
+
+console.log(third + ' ' + fifth);
