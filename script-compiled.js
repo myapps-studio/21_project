@@ -9,10 +9,12 @@ console.log(firstWord + ' ' + secondWord);
 
 // Zadanie 2
 
-multiply = function multiply(x, y) {
+function multiply(x) {
+  var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+
 
   return x * y;
-};
+}
 
 var test1 = multiply(5, 6);
 console.log(test1);
@@ -25,31 +27,39 @@ function argSum() {
   }
 
   return theArgs.reduce(function (previous, current) {
-    return (previous + current) / theArgs.length;
-  });
+    return previous + current;
+  }) / theArgs.length;
 }
 
-console.log(argSum(1, 2, 3));
+console.log(argSum(3, 2, 4));
 
 // Zadanie 4
 
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
+var first = grades[0],
+    sec = grades[1],
+    th = grades[2],
+    fort = grades[3],
+    fiv = grades[4],
+    six = grades[5],
+    sev = grades[6],
+    eight = grades[7],
+    nine = grades[8];
+// console.log(grades.length);
 
-function f() {
-  for (var _len2 = arguments.length, grades = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    grades[_key2] = arguments[_key2];
-  }
-
-  return grades;
+function argSum(first, sec, th, fort, fiv, six, sev, eight, nine) {
+  return grades.reduce(function (previous, current) {
+    return previous + current;
+  }) / grades.length;
 }
 
-console.log(argSum(f(grades)));
+console.log(argSum(grades));
 
 // Zadanie 5
 
 var data = [1, 4, 'Iwona', false, 'Nowak'];
-var third = data[2],
-    fifth = data[4];
+var name = data[2],
+    surname = data[4];
 
 
-console.log(third + ' ' + fifth);
+console.log(name + ' ' + surname);
