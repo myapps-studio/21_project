@@ -45,15 +45,9 @@ var first = grades[0],
     sev = grades[6],
     eight = grades[7],
     nine = grades[8];
-// console.log(grades.length);
 
-function argSum(first, sec, th, fort, fiv, six, sev, eight, nine) {
-  return grades.reduce(function (previous, current) {
-    return previous + current;
-  }) / grades.length;
-}
 
-console.log(argSum(grades));
+console.log('zadanie 4: ' + argSum(first, sec, th, fort, fiv, six, sev, eight, nine));
 
 // Zadanie 5
 
