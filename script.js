@@ -28,9 +28,9 @@ console.log(argSum(3, 2, 4));
 // Zadanie 4
 
 const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
-const [first, sec, th, fort, fiv, six, sev, eight, nine] = grades;
+// const [first, sec, th, fort, fiv, six, sev, eight, nine] = grades;
 
-console.log('zadanie 4: ' + argSum(first, sec, th, fort, fiv, six, sev, eight, nine));
+console.log('zadanie 4: ' + argSum(...grades));
 
 // Zadanie 5
 

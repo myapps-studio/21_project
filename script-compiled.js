@@ -36,18 +36,9 @@ console.log(argSum(3, 2, 4));
 // Zadanie 4
 
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
-var first = grades[0],
-    sec = grades[1],
-    th = grades[2],
-    fort = grades[3],
-    fiv = grades[4],
-    six = grades[5],
-    sev = grades[6],
-    eight = grades[7],
-    nine = grades[8];
+// const [first, sec, th, fort, fiv, six, sev, eight, nine] = grades;
 
-
-console.log('zadanie 4: ' + argSum(first, sec, th, fort, fiv, six, sev, eight, nine));
+console.log('zadanie 4: ' + argSum.apply(undefined, grades));
 
 // Zadanie 5
 
